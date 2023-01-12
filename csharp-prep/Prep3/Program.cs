@@ -27,7 +27,5 @@ class Program
                 Console.WriteLine("Yay, you guessed it! :DD");
             }
         }
-
-        Console.WriteLine("Hello Prep3 World!");
     }
 }
