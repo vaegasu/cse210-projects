@@ -1,9 +1,8 @@
 using System;
+class Entry 
+{
+    static void Main(string[] args) {
 
-class Entry {
-    public string _prompt();
-
-    public string _date();
-
-    public string _response();
+    }
+   
 }
