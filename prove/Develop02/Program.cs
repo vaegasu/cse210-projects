@@ -14,5 +14,8 @@ class Program
         Console.WriteLine("5. Quit");
         Console.WriteLine("What would you like to do? ");
 
+        string userResponse = Console.ReadLine();
+        
+
     }
 }
