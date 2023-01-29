@@ -2,34 +2,39 @@ using System;
 public class Journal
 {
     public string journal_entries;
+    public string write = "1. Write";
+    public string display = "2. Display";
+    public string load = "3. Load";
+    public string save = "4. Save";
+    public string quit = "5. Quit";
 
     public List<Entry> _entry = new List<Entry>();
 
     public void AddingEntry() 
     {
-        Console.WriteLine("1. Write");
+        Console.WriteLine(write);
     }
 
     public void DisplayJournal()
     {
-        Console.WriteLine("2. Display");
+        Console.WriteLine(display);
 
     }
 
     public void LoadFile()
     {
-        Console.WriteLine("3. Load");
+        Console.WriteLine(load);
 
     }
 
     public void SaveFile() 
     {
-        Console.WriteLine("4. Save");
+        Console.WriteLine(save);
     }
 
     public void Quit()
     {
-        Console.WriteLine("5. Quit");
+        Console.WriteLine(quit);
     }
 
 }
