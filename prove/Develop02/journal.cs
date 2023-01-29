@@ -1,7 +1,7 @@
 using System;
 public class Journal
 {
-    public string _entries;
+    public string journal_entries;
 
     public List<Entry> _entry = new List<Entry>();
 
