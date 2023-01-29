@@ -1,12 +1,13 @@
 using System;
 public class Entry 
 { 
-    static void Main(string[]args)
+        public string _prompt;
+        public string _date;
+        public string _response;
+
+    public void Display()
     {
-        Entry myEntry = new Entry();
+        Console.WriteLine($"{_date} | {_prompt} | {_response}");
     }
-        public string _prompt {get; set;}
-        public string _date {get; set;}
-        public string _response {get; set;}
 
 }
