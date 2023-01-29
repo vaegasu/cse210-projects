@@ -5,7 +5,7 @@ public class Prompt
 
     public List<Prompt> _prompt = new List<Prompt>();
 
-public void Display(){
+public void GeneratePrompt(){
     Console.WriteLine(_prompts);
 }
 
