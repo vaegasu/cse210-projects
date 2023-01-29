@@ -1,7 +1,7 @@
 using System;
 public class Prompt
 {
-    public string _prompts = "How was your day today?";
+    public string _prompts;
 
     public List<Prompt> _prompt = new List<Prompt>();
 
