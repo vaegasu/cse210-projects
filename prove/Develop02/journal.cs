@@ -1,6 +1,5 @@
 using System;
-
-class Journal
+public class Journal
 {
     
 }
