@@ -11,23 +11,24 @@ class Program
     {   
     };
 
-        while (start == true){
-            Console.WriteLine("Welcome to Vae's Journal :D");
-            Console.WriteLine("Please choose from the following:");
-            Menu menu1 = new Menu();
-            Console.WriteLine("What would you like to do today? ");
-            menu1.DisplayMenuOpts();
-            string userChoice = Console.ReadLine();
+    Console.WriteLine("Welcome to Vae's Journal :D");
+    Console.WriteLine("Please choose from the following:");
+
+    while (start == true){
+        Menu menu1 = new Menu();
+        Console.WriteLine("What would you like to do today? ");
+        menu1.DisplayMenuOpts();
+        string userChoice = Console.ReadLine();
 
     if (userChoice == "1") {
-            string date = DateTime.UtcNow.ToString("MM/dd/yyyy"); 
-            string prompt = displayPrompt();
-            Console.Write($"{prompt}\n>");
-            string text = Console.ReadLine();
-            string anEntry = ($"{date}, {prompt}, {text}");
-            Journal entry1 = new Journal(date, prompt, text);
-            entries.Add($"{date}, {prompt}, {text}");
-        }
+        string date = DateTime.UtcNow.ToString("MM/dd/yyyy"); 
+        string prompt = displayPrompt();
+        Console.Write($"{prompt}\n>");
+        string text = Console.ReadLine();
+        string anEntry = ($"{date}, {prompt}, {text}");
+        Journal entry1 = new Journal(date, prompt, text);
+        entries.Add($"{date}, {prompt}, {text}");
+    }
 
     else if (userChoice == "2") {
         foreach(string entry in entries){
@@ -63,9 +64,6 @@ class Program
         start = false;
     }
     }
-
-}
-
 }
 
  static List<string> prompt = new List<string>()
@@ -84,10 +82,12 @@ class Program
         };
 
     static string displayPrompt()
-    {
-        var random = new Random();
-        int index = random.Next(prompt.Count);
-        string randomPrompt = prompt[index];
-        return randomPrompt;
+        {
+            var random = new Random();
+            int index = random.Next(prompt.Count);
+            string randomPrompt = prompt[index];
+            return randomPrompt;
 
-    }       
+        }
+
+}
