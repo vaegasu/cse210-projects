@@ -1,13 +1,10 @@
-using System;
-public class Entry 
-{ 
-        public string _prompt = "";
-        public string _date = "";
-        public string _response = "";
+uusing System;
+using System.Collections.Generic;
 
-    public void Display()
-    {
-        Console.WriteLine($"{_date} | {_prompt} | {_response}");
-    }
+public class Entry
+ {   
+List<Entry> entries = new List<Entry>(){
+        
+    };
 
 }

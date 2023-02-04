@@ -1,28 +1,14 @@
 using System;
+using System.Collections.Generic;
+
 public class Journal
 {
-    public string journal_entries = "";
-    public List<Entry> _entry = new List<Entry>();
-
-    public void AddingEntry()
+    public string date;
+    public string prompt;
+    public string text;
+    public Journal(string aDate, string aPrompt, string theText) 
     {
 
     }
-
-    public void DisplayJournal()
-    {
-
-    }
-
-    public void LoadFile()
-    {
-
-    }
-
-    public void SaveFile()
-    {
-
-    }
-
 
 }
