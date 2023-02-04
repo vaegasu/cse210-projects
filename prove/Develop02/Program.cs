@@ -11,12 +11,11 @@ class Program
     {   
     };
 
-    Console.WriteLine("Welcome to Vae's Journal :D");
-    Console.WriteLine("Please choose from the following:");
+    Console.WriteLine("~~ Welcome to Vae's Journal :D ~~");
 
     while (start == true){
         Menu menu1 = new Menu();
-        Console.WriteLine("What would you like to do today? ");
+        Console.WriteLine("Please choose from the following:");
         menu1.DisplayMenuOpts();
         string userChoice = Console.ReadLine();
 
@@ -60,7 +59,7 @@ class Program
         };
     }
     else if (userChoice == "5") {
-        Console.WriteLine("Thank you for stopping by. See you later. :D");
+        Console.WriteLine("Thank you for stopping by. Hope to see you later! :D ~~");
         start = false;
     }
     }
@@ -68,16 +67,18 @@ class Program
 
  static List<string> prompt = new List<string>()
         {
-            "How did Heavenly Father blessed you today? (:",
-            "What are two things you accomplished today? (:",
-            "Share a favorite scripture of yours and explain why it's your favorite. (:",
-            "Share a time someone went out of there way for you. (:",
-            "What's on your mind today? And why? (:",
-            "What is something you can do to bless someone today? (:",
-            "What's something you would tell your past self? (:",
-            "Write a letter to someone in Heaven (:",
-            "Write a letter to someone you haven't seen a while",
-            "How was your day? What was the highlight of your day? Anything new?",
+            "How did Heavenly Father blessed you today? :D",
+            "What are two things you accomplished today? :D",
+            "Share a favorite scripture of yours and explain why it's your favorite. :D",
+            "Share a time someone went out of there way for you. :D",
+            "What's on your mind today? And why? :D",
+            "What is something you can do to bless someone today? :D",
+            "What's something you would tell your past self? :D",
+            "Write a letter to someone in Heaven :D",
+            "Write a letter to someone you haven't seen a while :D",
+            "Write a motivation note to your favorite person :D",
+            "What are you thankful for today? :D"
+            "How was your day? What was the highlight of your day? Anything new? :D",
 
         };
 
