@@ -14,7 +14,7 @@ class Word
         {
             foreach(string i in separateWords)
             {
-                Console.Write($"{i} ");
+                Console.Write($"{i}");
             }
         }   
         public void DisplayHidden()
