@@ -77,7 +77,7 @@ class Program
             "Write a letter to someone in Heaven :D",
             "Write a letter to someone you haven't seen a while :D",
             "Write a motivation note to your favorite person :D",
-            "What are you thankful for today? :D"
+            "What are you thankful for today? :D",
             "How was your day? What was the highlight of your day? Anything new? :D",
 
         };
