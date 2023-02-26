@@ -8,7 +8,7 @@ class Timer
     }
     public int _timeSet;
     protected string _timeRequested = "How long in 'seconds' would you like to do this activity? ";
-    protected string _getReady = "Prepare to begin. . . ";
+    protected string _getReady = "Prepare to begin the program. . . ";
 
     public int getTime()
     {
