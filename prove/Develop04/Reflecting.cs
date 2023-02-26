@@ -30,10 +30,6 @@ class Reflecting : Activity
         "> Is there anything you would do differently because of this experience? ",
         "> What does this experience tell you about yourself? ",
         "> If you could tell your future self something about this experience, what would it be? ",
-        "> How did this experience stretch your abilities? ",
-        "> Has this experience changed your relationships with anyone? If so, how? ",
-        "> What will you change because of this experience in your life? ",
-        "> How has this experience given you confidence in yourself? "
 
     };
     public Reflecting()
