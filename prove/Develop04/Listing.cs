@@ -20,7 +20,7 @@ class Listing : Activity
         "> What would you tell your past self? ",
         "> How has Heavenly Father blessed your life this week? "
     };
-    string _welcomeMessage = "This listing activity will help reflect on the good things in life.";
+    string _welcomeMessage = "This Listing Activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area. ";
 
     public void startListing()
     {
@@ -33,10 +33,10 @@ class Listing : Activity
         int listIndex = prompt.Next(keepListing.Count);
         string listPrompt = keepListing[listIndex];
         Console.WriteLine(listPrompt);
-        Console.WriteLine("Take a few seconds to think, then start listing. ");
+        Console.WriteLine("Take a few seconds to consider, then start listing. ");
         Thread.Sleep(5000);
         int lCount = 0;
-        Console.WriteLine("List away! ");
+        Console.WriteLine("List away!! ");
 
        //if(startTime < endTime)
         {
