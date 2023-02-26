@@ -2,7 +2,7 @@ using System;
 
 class Reflecting : Activity
 {
-    string _welcomeMessage = "In this activity will help reflect on times in our life when we have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life. ";
+    string _welcomeMessage = "This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life. ";
 
     List<string> startQuestions = new List<string>()
     {
@@ -26,14 +26,6 @@ class Reflecting : Activity
         "> What is your favorite thing about this experience? ",
         "> What did you learn from this experience that applies to other situations? ",
         "> What did you learn about yourself from this experience? ",
-        "> How can you keep this experience in your mind in the future? ",
-        "> What did you do to deal with any difficutlies? ",
-        "> What surprised you most about this experience? ",
-        "> What would your best friend say about this experience to encourage you? ",
-        "> If you could go back in time, what would you tell yourself about this experience? ",
-        "> How has this changed your outlook or world view? ",
-        "> What questions has this experience brought to your mind? ",
-        "> What is the most important thing to remember about this experience? ",
         "> What do you look forward to because of this experience? ",
         "> Is there anything you would do differently because of this experience? ",
         "> What does this experience tell you about yourself? ",

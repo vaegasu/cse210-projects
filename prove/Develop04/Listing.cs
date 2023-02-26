@@ -9,7 +9,7 @@ class Listing : Activity
 
     List<string> keepListing = new List<string>()
     {
-        "> Who are you thankful for? ",
+        "> Who are people that you appreciate? ",
         "> What are your personal strengths? ",
         "> Who have you helped today? ",
         "> Who do you look up to the most? ",
@@ -20,7 +20,7 @@ class Listing : Activity
         "> What would you tell your past self? ",
         "> How has Heavenly Father blessed your life this week? "
     };
-    string _welcomeMessage = "This Listing Activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area. ";
+    string _welcomeMessage = "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area. ";
 
     public void startListing()
     {
@@ -38,19 +38,19 @@ class Listing : Activity
         int lCount = 0;
         Console.WriteLine("List away!! ");
 
-       //if(startTime < endTime)
+        //if(startTime < endTime)
         {
-            while(DateTime.Now < endTime)
+            while (DateTime.Now < endTime)
             {
                 Console.Write("> ");
                 string list = Console.ReadLine();
-                lCount++;            
+                lCount++;
             }
         }
 
         Console.WriteLine($"Great work! You have completed {seconds} seconds of the listing activity, and listed {lCount} things.");
         Thread.Sleep(5000);
-        }
-
-
     }
+
+
+}
