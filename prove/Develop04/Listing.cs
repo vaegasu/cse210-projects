@@ -51,6 +51,4 @@ class Listing : Activity
         Console.WriteLine($"Great work! You have completed {seconds} seconds of the listing activity, and listed {lCount} things.");
         Thread.Sleep(5000);
     }
-
-
 }
