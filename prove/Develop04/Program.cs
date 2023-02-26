@@ -13,7 +13,7 @@ class Program
             menu.DisplayMenu();
             int activity = Int32.Parse(Console.ReadLine());
 
-            if(activity == 1)
+            if (activity == 1)
             {
                 Timer startTime = new Timer();
                 startTime.prepTime();
