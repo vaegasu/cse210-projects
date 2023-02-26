@@ -9,19 +9,18 @@ class Listing : Activity
 
     List<string> keepListing = new List<string>()
     {
-        "> Who are people that you appreciate? \n",
-        "> What are personal strengths of yours? \n",
-        "> Who are people that you have helped this week? \n",
-        "> When have you felt the Holy Ghost this month? \n",
-        "> Who are some of your personal heroes? \n",
-        "> What are some tender mercies from the Lord you've noticed? \n",
-        "> How have your prayers been answered, big or small? \n",
-        "> What are the little things you've taken time to do that have added to your days? \n",
-        "> What does unconditional love look like to you? \n",
-        "> What would you like to say yes to in the future? \n",
-        "> What would your Heavenly Father like you to remember? \n"
+        "> Who are you thankful for? ",
+        "> What are your personal strengths? ",
+        "> Who have you helped today? ",
+        "> Who do you look up to the most? ",
+        "> What are some tender mercies from the Lord you've noticed? ",
+        "> How have your prayers been answered? ",
+        "> What are the little things you've taken time to do that have added to your days? ",
+        "> What does unconditional love look like to you? ",
+        "> What would you tell your past self? ",
+        "> How has Heavenly Father blessed your life this week? "
     };
-    string _welcomeMessage = "\nThis activity will help you reflect on the good things in your life by having you list as many\nthings as you can in a certain area. \n";
+    string _welcomeMessage = "This listing activity will help reflect on the good things in life.";
 
     public void startListing()
     {
@@ -34,10 +33,10 @@ class Listing : Activity
         int listIndex = prompt.Next(keepListing.Count);
         string listPrompt = keepListing[listIndex];
         Console.WriteLine(listPrompt);
-        Console.WriteLine("\nTake 5 seconds to consider, then start listing.\n");
+        Console.WriteLine("Take a few seconds to think, then start listing. ");
         Thread.Sleep(5000);
         int lCount = 0;
-        Console.WriteLine("Start Listing! \n");
+        Console.WriteLine("List away! ");
 
        //if(startTime < endTime)
         {
@@ -49,7 +48,7 @@ class Listing : Activity
             }
         }
 
-        Console.WriteLine($"Well done! You completed {seconds} seconds of the listing activity, and listed {lCount} things.\n");
+        Console.WriteLine($"Great work! You have completed {seconds} seconds of the listing activity, and listed {lCount} things.");
         Thread.Sleep(5000);
         }
 
