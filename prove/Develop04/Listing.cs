@@ -38,7 +38,6 @@ class Listing : Activity
         int lCount = 0;
         Console.WriteLine("List away!! ");
 
-        //if(startTime < endTime)
         {
             while (DateTime.Now < endTime)
             {
