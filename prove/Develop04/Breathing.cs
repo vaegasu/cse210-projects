@@ -2,9 +2,7 @@ using System;
 
 class Breathing : Activity
 {
-    string _welcomeMessage = "\nThis activity is designed to focus on breathing in and out, relaxing your mind, \nand thinking only about your body and the breathing action.\n \n";
-
-    // int counter = 5;
+    string _welcomeMessage = "This activity is designed to focus on breathing in and out, relaxing your mind, and thinking only about your body and the breathing action. ";
     
     public Breathing()
     {
@@ -61,7 +59,7 @@ class Breathing : Activity
                 x++;                                                                                                
             }
         
-        Console.WriteLine($"Well done! You completed {seconds} seconds of the breathing activity.\n");
+        Console.WriteLine($"Great work! You completed {seconds} seconds of the breathing activity.\n");
         Thread.Sleep(5000);
         }
 
