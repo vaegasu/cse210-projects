@@ -59,7 +59,7 @@ class Breathing : Activity
                 x++;                                                                                                
             }
         
-        Console.WriteLine($"Great work! You completed {seconds} seconds of the breathing activity.\n");
+        Console.WriteLine($"Great work! You completed {seconds} seconds of the breathing activity. ");
         Thread.Sleep(5000);
         }
 
