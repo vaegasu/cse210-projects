@@ -54,7 +54,7 @@ class Breathing : Activity
                 Console.Write(" . ");
                 Thread.Sleep(1000);
                 x++;
-                Console.Write(" . \n");
+                Console.Write(" . ");
                 Thread.Sleep(1000);
                 x++;                                                                                                
             }
