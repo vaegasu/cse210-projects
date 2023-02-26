@@ -20,7 +20,7 @@ class Listing : Activity
         "> What would you tell your past self? ",
         "> How has Heavenly Father blessed your life this week? "
     };
-    string _welcomeMessage = "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area. ";
+    new string _welcomeMessage = "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area. ";
 
     public void startListing()
     {

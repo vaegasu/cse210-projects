@@ -2,7 +2,7 @@ using System;
 
 class Breathing : Activity
 {
-    string _welcomeMessage = "This activity is designed to focus on breathing in and out, relaxing your mind, and thinking only about your body and the breathing action. ";
+    new string _welcomeMessage = "This activity is designed to focus on breathing in and out, relaxing your mind, and thinking only about your body and the breathing action. ";
     
     public Breathing()
     {
