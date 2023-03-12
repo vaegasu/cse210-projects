@@ -26,4 +26,19 @@ public class Menu
         }
     }
 
+    List<string> goalType = new List<string>
+    {
+        "1. Simple",
+        "2. Checklist",
+        "3. Eternal"
+    };
+
+    public void displayGoalTypes()
+    {
+        foreach(string type in goalType)
+        {
+            Console.WriteLine(type);
+        }
+    }
+
 }

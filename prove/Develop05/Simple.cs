@@ -3,19 +3,53 @@ using System.Collections.Generic;
 
 class Simple : Goal 
 {
-    public void createSimple()
-    {
+    //int x = 0;
+    bool isComplete = false;
 
-    }
-    // private string _name;
+public Simple()
+{
 
-    // public override CreateGoal()
-    // {
-    //     Console.Write("\nName your goal: ");
-    //     string name = Console.ReadLine();
-    //     Console.Write("\nDescribe your goal: ");
-    //     string description = Console.ReadLine();
-    //     Console.Write("\nHow many points will this goal be worth? ");
-    //     int points = Int32.Parse(Console.ReadLine());
-    // }
+}
+
+public Simple(string _name, string _description, int _pointVal, bool _isComplete) 
+{
+
+}
+public string getName()
+{
+    Console.WriteLine("\nWhat is the name of your goal? ");
+    string name = Console.ReadLine();
+    setName(name);
+    return name;
+}
+public void setName(string name)
+{
+    _name = name;
+}
+
+public string getDesc()
+{
+    Console.WriteLine("\nWhat is a short description of your goal? ");
+    string desc = Console.ReadLine();
+    setDesc(desc);
+    return desc;
+}
+
+public void setDesc(string desc)
+{
+    _description = desc;
+}
+
+public int getPoints()
+{
+    Console.WriteLine("\nHow many points is this goal worth? ");
+    int points = Int32.Parse(Console.ReadLine());
+    setPoints(points);
+    return points;
+}
+
+public void setPoints(int points)
+{
+    _pointVal = points;
+}
 }
