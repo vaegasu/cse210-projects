@@ -25,7 +25,7 @@ class Checklist : Goal
 
 public int promptEntries()
 {
-    Console.WriteLine("\nHow many times until this goal is complete? ");
+    Console.WriteLine("How many times until this goal is complete? ");
     int numTillDone = Int32.Parse(Console.ReadLine());
     _numTillDone = numTillDone;
     return _numTillDone; 
