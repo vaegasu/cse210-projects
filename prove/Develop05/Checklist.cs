@@ -1,67 +1,34 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 
 class Checklist : Goal
 {
-    int x = 0;
-    bool isComplete = false;
-    int numEntries = 0;
-    int numTillDone = 0;
+    bool _isComplete = false;
+    int _numEntries = 0;
+    int _numTillDone = 0;
 
     public Checklist()
     {
+        _type = "C";
+    }
+    public Checklist(string name, string desc, int points, int numTillDone, int numEntries)
+    {
+        _type = "C";
+        _name = name;
+        _description = desc;
+        _pointVal = points;
+        _numTillDone = numTillDone;
+        _numEntries = numEntries;
 
     }
 
-    public string getName()
+public int promptEntries()
 {
-    Console.WriteLine("What is the name of your goal? ");
-    string name = Console.ReadLine();
-    setName(name);
-    return name;
-}
-public void setName(string name)
-{
-    _name = name;
-}
+    Console.WriteLine("\nHow many times until this goal is complete? ");
+    int numTillDone = Int32.Parse(Console.ReadLine());
+    _numTillDone = numTillDone;
+    return _numTillDone; 
 
-public string getDesc()
-{
-    Console.WriteLine("What is a short description of your goal? ");
-    string desc = Console.ReadLine();
-    setDesc(desc);
-    return desc;
-}
-
-public void setDesc(string desc)
-{
-    _description = desc;
-}
-
-public int getPoints()
-{
-    Console.WriteLine("How many points is this goal worth? ");
-    int points = Int32.Parse(Console.ReadLine());
-    setPoints(points);
-    return points;
-}
-
-public void setPoints(int points)
-{
-    _pointVal = points;
-}
-
-public int getEntries()
-{
-    Console.WriteLine("How many times until this goal is complete? ");
-    int numEntries = Int32.Parse(Console.ReadLine());
-    setEntries(numEntries);
-    return numEntries;
-
-}
-
-public void setEntries(int numEntries)
-{
-    _numEntries = numEntries;
 }
 }

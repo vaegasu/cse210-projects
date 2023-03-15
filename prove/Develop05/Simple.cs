@@ -1,54 +1,49 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 
 class Simple : Goal 
 {
-    bool isComplete = false;
+    bool _isComplete = false;
 
 public Simple()
 {
+    _type = "S";
 
 }
 
-public Simple(string _name, string _description, int _pointVal, bool _isComplete) 
+public Simple(string name, string description, int pointVal, bool isComplete) 
 {
-
+    _type = "S";
+    _name = name;
+    _description = description;
+    _pointVal = pointVal;
+    _isComplete = isComplete;
+    
 }
 public string getName()
 {
     Console.WriteLine("What is the name of your goal? ");
     string name = Console.ReadLine();
-    setName(name);
-    return name;
-}
-public void setName(string name)
-{
     _name = name;
+    return _name;
 }
 
 public string getDesc()
 {
     Console.WriteLine("What is a short description of your goal? ");
     string desc = Console.ReadLine();
-    setDesc(desc);
-    return desc;
+    _description = desc;
+    return _description;
 }
 
-public void setDesc(string desc)
-{
-    _description = desc;
-}
 
 public int getPoints()
 {
     Console.WriteLine("How many points is this goal worth? ");
     int points = Int32.Parse(Console.ReadLine());
-    setPoints(points);
-    return points;
+    _pointVal = points;
+    return _pointVal;
 }
 
-public void setPoints(int points)
-{
-    _pointVal = points;
-}
 }
