@@ -9,7 +9,7 @@ class Program
         Console.Write(event1.getShort());
         Console.Write(event1.getStandard());
         Console.Write(event1.getDetails());
-        Console.Write("\n Hit enter to see the next event \n");
+        Console.Write("Hit enter to see the next event ");
         Console.ReadLine();
         Console.Clear();
 
@@ -18,7 +18,7 @@ class Program
         Console.Write(event2.getShort());
         Console.Write(event2.getStandard());
         Console.Write(event2.getDetails());
-        Console.Write("\n Hit enter to see the next event \n");
+        Console.Write("Hit enter to see the next event ");
         Console.ReadLine();
         Console.Clear();
 
@@ -27,7 +27,7 @@ class Program
         Console.Write(event3.getShort());
         Console.Write(event3.getStandard());
         Console.Write(event3.getDetails());
-        Console.Write("\n Hit enter to see the next event \n");
+        Console.Write("Hit enter to see the next event ");
         Console.ReadLine();
 
         Event event4 = new Reception("solongstan@knightbusevents.com");
@@ -35,7 +35,7 @@ class Program
         Console.Write(event4.getShort());
         Console.Write(event4.getStandard());
         Console.Write(event4.getDetails());
-        Console.Write("\n Hit enter to see the next event \n");
+        Console.Write("Hit enter to see the next event ");
         Console.ReadLine();
 
         Event event5 = new Outdoor("Partly Cloudy, 20% chance rain, High: 76 - Low: 65");
@@ -43,7 +43,7 @@ class Program
         Console.Write(event5.getShort());
         Console.Write(event5.getStandard());
         Console.Write(event5.getDetails());
-        Console.Write("\n Hit enter to see the next event \n");
+        Console.Write("Hit enter to see the next event ");
         Console.ReadLine();
 
         Event event6 = new Outdoor("100% chance snow, High: 29 - Low 15");
@@ -51,7 +51,7 @@ class Program
         Console.Write(event6.getShort());
         Console.Write(event6.getStandard());
         Console.Write(event6.getDetails());
-        Console.Write("\n Hit enter to see the next event \n");
+        Console.Write("Hit enter to see the next event ");
         Console.ReadLine();
 
     }

@@ -28,14 +28,14 @@ class Lecture : Event
     public override string getStandard()
     {
         
-        return $"--------------------\n{_title}\nFeaturing guest speaker {_speaker}\n{_date}, {_time}\n{_address}\n--------------------\n";
+        return $"-------------------- {_title} Featuring guest speaker {_speaker} {_date}, {_time} {_address} -------------------- ";
     }
     public override string getShort()
     {
-        return $"----------\n{_type} by {_speaker}\n{_title}\n{_date}\n----------\n";
+        return $"---------- {_type} by {_speaker} {_title} {_date} ---------- ";
     }
     public override string getDetails()
     {
-        return $"     *****     \n--- {_title} ---\nA special Lecture by {_speaker}\nWhen: {_date}, at {_time}\nWhere: {_address}\n >>> Seating is limited to {_capacity}, so reserve your seat soon <<< \n     *****     \n ";
+        return $"     *****     --- {_title} ---\nA special Lecture by {_speaker} When: {_date}, at {_time} Where: {_address} >>> Seating is limited to {_capacity}, so reserve your seat soon <<<     *****     ";
     }
 }

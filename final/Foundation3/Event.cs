@@ -22,7 +22,7 @@ class Event
         _date = date;
         _time = time;
         _address = address;
-        _eventSummary = $"{_title}, {_description} ({_type})\n{_date}, at {_time}\n{_address}";
+        _eventSummary = $"{_title}, {_description} ({_type})\n{_date}, at {_time} {_address}";
         return _eventSummary;
 
     }

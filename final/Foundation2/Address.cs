@@ -20,7 +20,7 @@ class Address
         _city = city;
         _state = state;
         _country = country;
-        _addString = $"{_street},\n{_city}, {_state}\n{_country}";
+        _addString = $"{_street}, {_city}, {_state} {_country}";
 
     }
     
@@ -34,19 +34,4 @@ class Address
         _shipCost = 35.00;
         return _shipCost;
     }
-
-
-//     public string newAddress(int custID)
-//     {
-//         custID = _custID;
-//         string strAdd = _street;
-//         string city = _city;
-//         string state = _state;
-//         string zip = _zip;
-//         string country = _country;
-//         Address addy1 = new Address(_custID, _street, _city, _state, _zip, _country);
-//         addresses.Add(addy1);
-//         _addString = $"{_street},\n{_city}, {_state} {_zip}\n{_country}";
-//         return _addString;
-//     }
 }

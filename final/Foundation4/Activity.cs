@@ -3,7 +3,7 @@ using System;
 class Activity
 {
     protected string _date;
-    // length = time in minutes doing activity
+    
     protected int _minutes;
     protected string _summary;
     protected string _activity;

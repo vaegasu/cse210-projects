@@ -23,9 +23,4 @@ class Customer
    {
         return $"{_addy}";
     }
-    // public void shipLabel()
-    // {
-    //     string shipLabel = $"{_custName},\n{_address}";
-    //     Console.WriteLine(shipLabel);
-    // }
 }

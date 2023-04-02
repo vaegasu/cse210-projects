@@ -18,16 +18,16 @@ class Outdoor : Event
 
     public override string getStandard()
     {
-        return $"   ---   ---   ---    \n{_title}\n{_description}\n{_date}, {_time}\nLocation: {_address}\n   ---   ---   ---   \n";
+        return $"   ---   ---   ---     {_title} {_description} {_date}, {_time} Location: {_address}    ---   ---   ---   ";
     }
 
     public override string getDetails()
     {
-        return $" ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n{_title}\n{_description}\n When: {_date}, at {_time}\nLocation: {_address}\n This is An outdoor event! Please come dressed and prepared for {_weather}\n ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n";
+        return $" ~ ~ ~ ~ ~ ~ ~ ~ ~ ~  {_title} {_description}  When: {_date}, at {_time} Location: {_address}  This is An outdoor event! Please come dressed and prepared for {_weather}  ~ ~ ~ ~ ~ ~ ~ ~ ~ ~  ";
     }
 
     public override string getShort()
     {
-        return $"----------\n{_title}\nAn {_type} event\n{_date}\n----------\n";
+        return $"---------- {_title} An {_type} event {_date} ---------- ";
     }
 }

@@ -18,16 +18,16 @@ class Reception : Event
     }
         public override string getStandard()
     {
-        return $"\n          *****          \n{_title}\n{_description}\n {_date}, at {_time}\n{_address}\n          *****          \n";
+        return $"          *****          {_title} {_description} {_date}, at {_time} {_address}          *****           ";
     }
 
     public override string getDetails()
     {
-        return $"\n  **  **  **  **  **  **  **  **  \nWe are pleased to announce the {_title}\n{_description}\n Please Join Us to Celebrate:\n{_date}, from {_time}\n We will be celebrating at {_address}\n\n >>>  Please RSVP at {_emailRSVP} <<< \n  **  **  **  **  **  **  **  **  \n ";
+        return $"**  **  **  **  **  **  **  ** We are pleased to announce the {_title} {_description}  Please Join Us to Celebrate: {_date}, from {_time}  We will be celebrating at {_address}   >>>  Please RSVP at {_emailRSVP} <<<    **  **  **  **  **  **  **  **    ";
     }
 
     public override string getShort()
     {
-        return $"\n*** Save the Date *** \n{_title}\n{_date}\n   ***      ***      ***   \n";
+        return $"*** Save the Date *** {_title} {_date}   ***      ***      ***    ";
     }
 }
