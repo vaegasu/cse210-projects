@@ -1,54 +1,52 @@
 using System;
+using System.Collections;
 
 class Address
 {
     private string _street;
     private string _city;
     private string _state;
-    private string _zip;
-    private string _country;
-    private bool _inUS;
-    private int ship;
+    public string _country;
+    public double _shipCost;
+    public string _addString;
 
     public Address()
     {
 
     }
-    public Address(string street, string city, string state, string zip, string country)
+    public Address(string street, string city, string state, string country)
     {
-        street = _street;
-        city = _city;
-        state = _state;
-        zip = _zip;
-        country = _country;
+        _street = street;
+        _city = city;
+        _state = state;
+        _country = country;
+        _addString = $"{_street},\n{_city}, {_state}\n{_country}";
 
     }
-    public string newAddress(string strAdd, string city, string state, string zip, string country)
+    
+    public double inUS()
     {
-        strAdd = _street;
-        city = _city;
-        state = _state;
-        zip = _zip;
-        country = _country;
-        string addString = $"{_street},\n{_city}, {_state} {_zip}\n{_country}";
-        return addString;
-    }
-
-    public double IsInUS(string country)
-    {
-        country = _country;
-        double shipChg = 0.00;
-        if(_country == "USA" || _country == "US")
+        if(_country == "US"|| _country == "USA")
         {
-            bool _inUS = true;
-            shipChg = 5.00;
+            _shipCost = 5.00;
+            return _shipCost;
         }
-        else
-        {
-            bool _inUS = false;
-            shipChg = 35.00;
-        }
-
-        return shipChg;
+        _shipCost = 35.00;
+        return _shipCost;
     }
+
+
+//     public string newAddress(int custID)
+//     {
+//         custID = _custID;
+//         string strAdd = _street;
+//         string city = _city;
+//         string state = _state;
+//         string zip = _zip;
+//         string country = _country;
+//         Address addy1 = new Address(_custID, _street, _city, _state, _zip, _country);
+//         addresses.Add(addy1);
+//         _addString = $"{_street},\n{_city}, {_state} {_zip}\n{_country}";
+//         return _addString;
+//     }
 }

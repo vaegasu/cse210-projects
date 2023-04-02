@@ -1,24 +1,31 @@
 using System;
+using System.Collections;
 
 class Customer
 {
-    List<Address> addresses = new List<Address>();
     private string _custName;
-    private int _custID;
-    Address address = new Address();
+    private Address _address;
+    private string _addy;
 
-    // private bool inUS;
-
-    public Customer()
+    public Customer(string name, Address _address)
     {
+        _custName = name;
+        _addy = $"{_address._addString}";
 
     }
-    public Customer(string name, int custID)
+    
+
+    public string getName()
     {
-        name = _custName;
-        custID = _custID;
-        
+        return $"{_custName}";
     }
-
-
+    public string getAddy()
+   {
+        return $"{_addy}";
+    }
+    // public void shipLabel()
+    // {
+    //     string shipLabel = $"{_custName},\n{_address}";
+    //     Console.WriteLine(shipLabel);
+    // }
 }

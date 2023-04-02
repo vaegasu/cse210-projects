@@ -1,29 +1,39 @@
 using System;
+using System.Collections;
+
 
 class Product
 {
-    public int _prodID;
-    public string _prodName;
+    private int _prodID;
+    private string _prodName;
     private double _price;
-    public int _quantity;
+    private int _quantity;
 
     public Product()
     {
 
     }
+    public Product(int ID, int quant)
+    {
+        _prodID = ID;
+        _quantity = quant;
+    }
 
     public Product(int ID, string prod, double cost, int quant)
     {
-        ID = _prodID;
-        prod = _prodName;
-        cost = _price;
-        quant = _quantity;
+        _prodID = ID;
+        _prodName = prod;
+        _price = cost;
+        _quantity = quant;
 
     }
-
-    public double totalCost(int quantity, float price)
+    public string getProd()
     {
-        double total = quantity * price;
+        return $"-- Product ID: {_prodID}, item: {_prodName}, quantity: {_quantity} ";
+    }
+    public double totalCost()
+    {
+        double total = _quantity * _price;
         return total;
     }
 }
