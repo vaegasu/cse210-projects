@@ -3,7 +3,6 @@ using System;
 class Activity
 {
     protected string _date;
-    
     protected int _minutes;
     protected string _summary;
     protected string _activity;
@@ -40,4 +39,5 @@ class Activity
     {
         return "";
     }
+
 }
